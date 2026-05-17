@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  rss-server:
+    image: ghcr.io/kevdog114/kindercare-scaper/rss-server:latest
+    container_name: kindercare-rss
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - media-data:/app/media
+    environment:
+      - CONFIG_PATH=/app/config.local.json
+      - AUTH_TOKEN=${AUTH_TOKEN:-changeme}
+
+volumes:
+  media-data:
