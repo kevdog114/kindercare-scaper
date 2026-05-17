@@ -1,0 +1,10 @@
+{
+  "api_url": "https://classroom.kindercare.com/all_activities_api?page=1",
+  "cookie_string": "YOUR_COOKIE_STRING_HERE",
+  "sync_start_time": "06:00",
+  "sync_end_time": "22:00",
+  "refresh_interval_minutes": 30,
+  "jitter_max_seconds": 300,
+  "media_download_dir": "media",
+  "server_port": 8080
+}

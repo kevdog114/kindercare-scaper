@@ -130,3 +130,7 @@ downloads/
 downloaded_files.json
 chromedriver
 chromedriver.exe
+config.json
+config.local.json
+.DS_Store
+media/
