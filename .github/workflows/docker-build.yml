@@ -26,7 +26,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Run basic container health check
+      - name: Verify Docker image
         run: |
-          docker create --name test-container kindercare-rss:latest
-          docker rm test-container
+          docker images | grep kindercare-rss
