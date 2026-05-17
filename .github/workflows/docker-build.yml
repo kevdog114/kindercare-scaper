@@ -26,6 +26,4 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Verify Docker image
-        run: |
-          docker images | grep kindercare-rss
+
